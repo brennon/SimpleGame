@@ -9,6 +9,9 @@
 import UIKit
 import SpriteKit
 
+/**
+    SKNode Extension
+*/
 extension SKNode {
     class func unarchiveFromFile(file : NSString) -> SKNode? {
         if let path = NSBundle.mainBundle().pathForResource(file, ofType: "sks") {
@@ -25,6 +28,9 @@ extension SKNode {
     }
 }
 
+/**
+    GameViewController
+*/
 class GameViewController: UIViewController {
 
     override func viewDidLoad() {
